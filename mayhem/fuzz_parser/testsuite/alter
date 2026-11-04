@@ -1,0 +1,1 @@
+ALTER TABLE Person ADD nick STRING DEFAULT 'none'

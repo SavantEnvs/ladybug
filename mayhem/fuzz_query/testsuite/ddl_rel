@@ -1,0 +1,1 @@
+CREATE REL TABLE Likes(FROM Person TO Item, rating INT32, MANY_MANY)
