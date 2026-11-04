@@ -1,0 +1,1 @@
+MATCH (a:Person), (b:Person) WHERE a.id < b.id RETURN a.name, b.name UNION ALL MATCH (c:City) RETURN c.name, 'city'

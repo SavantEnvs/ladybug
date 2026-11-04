@@ -1,0 +1,1 @@
+MATCH (p:Person) WHERE p.name STARTS WITH 'A' OR p.score > 2.0 AND NOT p.age < 20 RETURN p

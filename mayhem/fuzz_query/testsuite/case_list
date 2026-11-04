@@ -1,0 +1,1 @@
+MATCH (p:Person) RETURN CASE WHEN p.age > 30 THEN 'old' ELSE 'young' END, list_sort(p.tags), size(p.tags)

@@ -1,0 +1,1 @@
+RETURN cast('42' AS INT64) + 1, date('2020-02-29') + interval('1 day'), {a: 1, b: [1,2]}, map([1],[2])

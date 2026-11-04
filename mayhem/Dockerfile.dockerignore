@@ -1,0 +1,6 @@
+# Local build output; the image rebuilds it. .git is deliberately NOT ignored: the image holds the
+# full history of the mayhem branch.
+build/
+/fuzz_*
+ctrf-report.json
+**/__pycache__/

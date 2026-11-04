@@ -1,0 +1,10 @@
+project: savantenvs/ladybug
+target: fuzz_query
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_query/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_query
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_query/fuzz_query.dict
+    timeout: 30

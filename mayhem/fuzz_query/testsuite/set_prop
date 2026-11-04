@@ -1,0 +1,1 @@
+MATCH (p:Person {id: 1}) SET p.age = p.age + 1, p.name = 'Al' RETURN p
