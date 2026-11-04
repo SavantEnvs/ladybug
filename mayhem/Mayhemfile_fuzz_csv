@@ -1,0 +1,10 @@
+project: savantenvs/ladybug
+target: fuzz_csv
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_csv/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_csv
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_csv/fuzz_csv.dict
+    timeout: 30

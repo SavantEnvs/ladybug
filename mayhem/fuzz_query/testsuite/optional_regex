@@ -1,0 +1,1 @@
+OPTIONAL MATCH (n:City) RETURN n.name, regexp_matches(n.name, 'W.*')
